@@ -22,23 +22,23 @@ tl.from(h1,{
 
 const animation1 = () =>{
     var play=document.querySelector(".play");
-    var page2=document.querySelector(".page2")
+    var videoCont=document.querySelector(".video-container")
     
-    page2.addEventListener("mouseenter",()=>{
+    videoCont.addEventListener("mouseenter",()=>{
         gsap.to(play,{
             opacity:1,
             scale:1.3
         })
     })
-    page2.addEventListener("mouseleave",()=>{
+    videoCont.addEventListener("mouseleave",()=>{
         gsap.to(play,{
             opacity:0,
             scale:0
         })
     })
-    page2.addEventListener("mousemove",(e)=>{
+    videoCont.addEventListener("mousemove",(e)=>{
         gsap.to(play,{
-            left:e.x,
+            left:e.x-50,
             top:e.y-80
         })
     })
