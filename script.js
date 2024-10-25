@@ -1,6 +1,13 @@
-const headerAnimation =()=>{
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true
+});
+  
+  
+  
+  const headerAnimation =()=>{
     const h1=document.querySelectorAll("h1");
-const header=document.querySelector(".header");
+   const header=document.querySelector(".header");
 
 var tl= gsap.timeline();
 
@@ -37,9 +44,11 @@ const animation1 = () =>{
         })
     })
     videoCont.addEventListener("mousemove",(e)=>{
+        console.log(e.x)
+        console.log(e.y)
         gsap.to(play,{
-            left:e.x-50,
-            top:e.y-80
+            left:e.x,
+            top:e.y
         })
     })
 }
@@ -47,6 +56,9 @@ const animation1 = () =>{
 
 headerAnimation();
 animation1();
+
+
+
 
 
 
