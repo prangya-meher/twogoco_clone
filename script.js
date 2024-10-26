@@ -6,7 +6,7 @@
   
   
   const headerAnimation =()=>{
-    const h1=document.querySelectorAll("h1");
+    const headerH1=document.querySelectorAll("h1");
    const header=document.querySelector(".header");
 
 var tl= gsap.timeline();
@@ -18,7 +18,7 @@ tl.from(header,{
     duration:0.5
 })
 
-tl.from(h1,{
+tl.from(headerH1,{
     y:70,
     stagger:0.3,
     opacity:0,
@@ -53,7 +53,28 @@ const animation1 = () =>{
     })
 }
 
+function cursorAnimation() {
+    document.addEventListener("mousemove", function (dets) {
+      gsap.to(".cursor", {
+        left: dets.x-70,
+        top: dets.y-80,
+      });
+    });
 
+    let page4=document.querySelector(".page4");
+    page4.addEventListener("mouseenter",()=>{
+        gsap.to(".cursor",{
+            scale:1.4,
+        })
+    })
+    page4.addEventListener("mouseleave",()=>{
+        gsap.to(".cursor",{
+            scale:0,
+        })
+    })
+}
+
+cursorAnimation();
 headerAnimation();
 animation1();
 
