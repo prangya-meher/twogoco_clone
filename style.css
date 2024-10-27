@@ -208,11 +208,11 @@ body {
   background-color: rgb(100, 97, 97);
 }
 
-.page3 p::selection {
+ p::selection {
   background-color: black;
   color: white;
 }
-.page3 h1::selection {
+ h1::selection {
   background-color: black;
   color: white;
 }
@@ -226,7 +226,7 @@ body {
   padding: 0 6vw;
   display: flex;
   flex-direction: column;
-  gap: 20vw;
+  gap: 10vw;
   position: relative;
 }
 .page4 .page4-icons {
@@ -251,6 +251,212 @@ body {
   text-transform: uppercase;
 }
 
+/* <-------------------------------------------page5-----------------------------------> */
+.page5{
+  margin-top:1.5vw;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  padding: 0 3vw;
+}
+.page5 .page5-first{
+  font-family: helvetica;
+  display: flex;
+  padding: 2vw;
+  gap: 15vw;
+}
+.page5-first .page5.dots{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.page5-dots .dots{
+  height: 10px;
+  width: 10px;
+  border-radius: 40px;
+  padding:8px;
+  border: 1px solid black;
+}
+
+.page5 .page5-sec{
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  align-items: center;
+  padding: 0 10vw;
+}
+.page5-sec h1{
+  font-family: futura;
+  font-size: 4vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 4vw;
+}
+.page5-sec button{
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-size:10px;
+  font-weight: 900;
+  height: 7vh;
+  width: 19vw;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  border-style: none;
+  padding: 10px;
+}
+.page5-sec p{
+  font-size: 15px;
+  margin-top: -3vw;
+}
+
+/* <------------------------------------page6---------------------------> */
+.page6{
+  height: 100vh;
+  width: 100%;
+  margin-top: 13vw;
+  padding:2vw;
+  display: flex;
+  gap: 1vw;
+}
+.page6 .page6-left{
+  display: flex;
+  flex-direction: column;
+  gap:2vw;
+}
+.page6-left h4{
+  font-family: futura;
+  font-size: 20px;
+  text-transform: uppercase;
+} 
+.page6-left p{
+  font-family: helvetica;
+  font-size: 15px;
+}
+.page6-left h6{
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-size:10px;
+}
+.page6-left .page6-line{
+  width: 110px;
+  height: 1px;
+  background-color: black;
+  margin-top: -1.5vw;
+}
+.page6-right{
+  margin-left:11vw;
+  display: flex;
+  gap:0.5vw;
+}
+.page6-right .page6-img{
+  background-color: black;
+  height:100%;
+  overflow: hidden;
+}
+.page6-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.page6-sep {
+  margin-top: 3vw;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  height: min-content;
+  padding: 0 2vw;
+}
+
+.page6-sep h2 {
+  text-transform: uppercase;
+  font-size: 33px;
+  font-weight: 400;
+  font-family:futura;
+}
+
+.page6-sep .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(110, 107, 107, 0.475);
+}
+
+/* <---------------------------------------page7----------------------------------> */
+.page7{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:5vw;
+  padding: 1vw 2vw;
+  justify-content: center;
+  align-items: center;
+  font-family: helvetica;
+  font-size: 12px;
+}
+.page7 .page7-upp{
+  display: flex;
+  gap:20vw;
+  align-items: center;
+}
+.page7-left, .page7-right{
+  margin-top: -12vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.page7-left .contact, .page7-right .contact{
+  text-transform: uppercase;
+  color: #A9A9A9;
+  white-space: nowrap;
+}
+.page7-left ul{
+  list-style: none;
+  text-transform: capitalize;
+display: flex;
+flex-direction: column;
+justify-items:center;
+align-items: flex-start;
+gap:5px;
+}
+.page7-right ul{
+  list-style: none;
+  text-transform: capitalize;
+display: flex;
+flex-direction: column;
+justify-items:center;
+align-items: flex-end;
+gap:5px;
+}
+.page7-middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:5vw;
+}
+.page7-middle svg{
+  width:40vw;
+  height:25vh;
+  object-fit: contain;
+}
+.page7-middle .middle-sec{
+  display: flex;
+  gap: 2vw;
+  color: #A9A9A9;
+  text-transform: uppercase;
+}
+.page7-down .middle-last{
+  width: 100%;
+  padding: 0 17.5vw;
+  text-align: center;
+}
 @media(min-width:300px) and (max-width: 1025px) {
   /* <-------------------header----------------------> */
 
