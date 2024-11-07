@@ -85,12 +85,12 @@ tl.from(headerLink,{
     duration:0.5
 })
 
-tl.from(headerH1,{
-    y:70,
-    stagger:0.3,
-    opacity:0,
-    duration:0.4
-})
+// tl.from(headerH1,{
+//     y:70,
+//     stagger:0.3,
+//     opacity:0,
+//     duration:0.4
+// })
 }
 
 const videoAnimation = () =>{

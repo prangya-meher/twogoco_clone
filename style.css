@@ -30,6 +30,8 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top: 0;
+  left:0;
   z-index: 10;
 }
 .header .logo{
@@ -332,7 +334,9 @@ align-items: center;
   padding:8px;
   border: 1px solid black;
 }
-
+.page5-dots .dots-text{
+  white-space:nowrap;
+}
 .page5 .page5-sec{
   display: flex;
   flex-direction: column;
@@ -361,6 +365,8 @@ align-items: center;
   padding: 10px;
 }
 .page5-sec p{
+  font-family: helvetica;
+  font-weight: lighter;
   font-size: 15px;
   margin-top: -3vw;
 }
@@ -508,9 +514,243 @@ gap:5px;
   padding: 0 17.5vw;
   text-align: center;
 }
+
 @media (max-width:600px) {
+  /* <-------------------header----------------------> */
+  .header{
+    padding: 25px;
+  }
+  .logo svg{
+    height:4.7vh;
+    width:20vw;
+    display: block;
+  }
+  .header .icons {
+    margin-top: 4vw;
+    gap: 15vw;
+    padding:20px;
+  }
+  .header .link ul {
+    display:none;
+  }
+  /* <----------------------------------page1-----------------------------> */
+.page1 {
+  margin-top: 40vw;
+  padding: 4vw 3vw;
+  width: 135%;
+  gap:7vw;
+  min-height: 53vh;
+}
+.page1 h1 {
+  letter-spacing:-8px;
+  font-size:20vw;
+  line-height: 17vw;
+}
+.page1 .video-container {
+  width: 130%;
+  height: 30vh;
+  position: relative;
+  cursor: pointer;
+}
+.video-container .play {
+  padding: 12vw;
+  font-size:25px;
+  border-radius:100px;
 }
 
+/* <------------------------------sep--------------------------> */
+.sep {
+  width: 135%;
+}
+
+.sep .sep-text {
+  font-size: 14px;
+}
+
+/* <------------------------page2-----------------------> */
+.page2 {
+  min-height: 100vh;
+  width: 135%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page2 .elem {
+  height: 100vh;
+  width: 100%;
+}
+.page2 .elem .box{
+height: 70px;
+width:75vw;
+}
+.elem .box .dets{
+  height: 10px;
+  width: 9px;
+}
+.elem .box .shop{
+  font-size: 17px;
+}
+.elem .box .messina{
+  font-size: 17px;
+}
+/* <----------------------page3----------------------> */
+.page3 {
+  width: 135%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:10vw;
+}
+.page3 h1 {
+  font-size: 8vw;
+  line-height:8vw;
+}
+.page3-right {
+  gap: 5vw;
+}
+.page3-right p {
+  font-size:19px;
+}
+
+.page3-right h6 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.page3-right .page3-line {
+  width: 20vw;
+  height: 1.5px;
+  margin-top: -1vw;
+  margin-left: 56vw;
+}
+
+/* <------------------------------------------page4----------------------------> */
+.page4 {
+  width: 135%;
+  margin: 8vw 0;
+  padding: 0 6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20vw;
+  position: relative;
+  margin-bottom:25vw;
+}
+.page4 .page4-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page4 .page4-img {
+  width: 70vw;
+}
+.page4-img p {
+  font-size: 18px;
+}
+
+/* <-------------------------------------------page5-----------------------------------> */
+.page5{
+  min-height: 50vh;
+  margin-top:8vw;
+  width: 135%;
+  gap:20vw;
+}
+.page5 .page5-first{
+  gap:18vw;
+}
+.page5 .page5-sec{
+  gap:60vw;
+}
+.page5-sec h1{
+  font-size:5vw;
+  line-height:6vw;
+}
+.page5-sec button{
+  font-size:18px;
+  width: 80vw;
+}
+.page5-sec p{
+  font-size: 22px;
+  margin-top: -50vw;
+}
+
+/* <------------------------------------page6---------------------------> */
+.page6{
+  height: 60vh;
+  width: 135%;
+  padding:2vw;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.page6 .page6-left{
+  display: flex;
+  flex-direction: column;
+  gap:2vw;
+}
+.page6-left h4{
+  font-family: futura;
+  font-size: 20px;
+  text-transform: uppercase;
+} 
+.page6-left p{
+  font-family: helvetica;
+  font-size: 15px;
+}
+.page6-left h6{
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-size:10px;
+}
+.page6-left .page6-line{
+  width: 110px;
+  height: 1px;
+  background-color: black;
+  margin-top: -1.5vw;
+}
+.page6-right{
+  margin-left:11vw;
+  display: flex;
+  gap:0.5vw;
+}
+.page6-right .page6-img{
+  background-color: black;
+  height:60%;
+  overflow: hidden;
+}
+.page6-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.page6-sep {
+  margin-top: 3vw;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  height: min-content;
+  padding: 0 2vw;
+}
+
+.page6-sep h2 {
+  text-transform: uppercase;
+  font-size: 33px;
+  font-weight: 400;
+  font-family:futura;
+}
+
+.page6-sep .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(110, 107, 107, 0.475);
+}
+}
 
 
 
