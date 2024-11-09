@@ -368,6 +368,7 @@ align-items: center;
 .page5-sec p{
   font-family: helvetica;
   font-weight: lighter;
+  color: black;
   font-size: 15px;
   margin-top: -3vw;
 }
@@ -727,7 +728,7 @@ gap: 9vw;
 }
 
 .page7-left .contact, .page7-right .contact{
-font-size: 18px;
+font-size: 15px;
 }
 .page7-middle svg{
   width:20vw;
@@ -742,7 +743,7 @@ font-size: 18px;
   text-align: justify;
 }
 .middle-last p{
-  font-size: 18px;
+  font-size: 15px;
 }
 }
 
