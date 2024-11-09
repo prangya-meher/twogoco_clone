@@ -520,7 +520,7 @@ gap:5px;
   text-align: center;
 }
 
-@media (max-width:600px) {
+@media (min-width:300px) and (max-width:700px) {
   /* <-------------------header----------------------> */
   .header{
     padding: 25px;
@@ -710,7 +710,7 @@ gap: 9vw;
 
 /* <---------------------------------------page7----------------------------------> */
 .page7{
-  height: 100vh;
+  height: 120vh;
 }
 .page7 .page7-upp{
   display: flex;
@@ -733,20 +733,175 @@ gap: 9vw;
 .page7-down .middle-last{
   text-align: justify;
 }
+}
 
-/* .page7{
-  height:100vh;
+@media (min-width:701px) and (max-width:1026px) 
+{
+  /* <-------------------header----------------------> */
+  .header{
+    padding: 25px;
+  }
+  .logo svg{
+    height:4.6vh;
+    width:20vw;
+    display: block;
+  }
+  .header .icons {
+    margin-top: 4vw;
+    gap: 15vw;
+    padding:20px;
+  }
+  .header .link ul {
+    display:none;
+  }
+   /* <----------------------------------page1-----------------------------> */
+.page1 {
+  margin-top: 25vw;
+  padding: 4vw 1vw;
+  gap:7vw;
+  min-height: 53vh;
+}
+.page1 h1 {
+  letter-spacing:-8px;
+  font-size:17vw;
+  line-height: 15vw;
+}
+.page1 .video-container {
+  height: 26vh;
+  position: relative;
+  cursor: pointer;
+}
+.video-container .play {
+  padding: 12vw;
+  font-size:25px;
+  border-radius:100px;
+}
+/* <------------------------page2-----------------------> */
+.page2 {
+  min-height: 100vh;
   width: 100%;
-  padding: 1vw 2vw;
-  justify-content:center;
-  gap:1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-family: helvetica;
-  font-size: 12px;
+}
+.page2 .elem {
+  height: 100vh;
+  width: 100%;
+}
+.page2 .elem .box{
+height: 70px;
+width:75vw;
+}
+.elem .box .dets{
+  height: 10px;
+  width: 9px;
+}
+.elem .box .shop{
+  font-size: 17px;
+}
+.elem .box .messina{
+  font-size: 17px;
+}
+/* <----------------------page3----------------------> */
+.page3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:8vw;
+}
+.page3 h1 {
+  font-size: 4vw;
+  line-height:4vw;
+}
+.page3-right {
+  gap: 5vw;
+}
+.page3-right p {
+  font-size:15px;
+}
+
+.page3-right h6 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.page3-right .page3-line {
+  width: 20vw;
+  height: 1.5px;
+  margin-top: -1vw;
+  margin-left: 56vw;
+}
+/* <------------------------------------------page4----------------------------> */
+/* <-------------------------------------------page5-----------------------------------> */
+.page5{
+  min-height: 66vh;
+  margin-top:8vw;
+  width: 100%;
+  gap:18vw;
+}
+.page5 .page5-first{
+  gap:9vw;
+}
+.page5 .page5-sec{
+  gap:35vw;
+}
+.page5-sec h1{
+  font-size:4vw;
+  line-height:4vw;
+}
+.page5-sec button{
+  font-size:12px;
+  width: 50vw;
+  padding: 8px;
+  height: 6vh;
+}
+.page5-sec p{
+  font-size: 15px;
+  margin-top:-30vw;
+}
+/* <------------------------------------page6---------------------------> */
+.page6{
+  height: 70vh;
+flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+gap: 9vw;
+}
+.page6 .page6-left{
+  width: 100%;
+  gap: 6vw;
+}
+.page6-left h4{
+  font-size: 28px;
+} 
+.page6-left p{
+  font-size: 18px;
+}
+.page6-left .page6-line{
+  margin-top: -4.5vw;
+}
+.page6-img img{
+ scale:1.5;
+}
+.page6-sep{
+  margin-top: 20vw;
+  gap: 30px;
+}
+.page6-sep h2{
+  font-size: 23px;
+  white-space: nowrap;
+}
+/* <---------------------------------------page7----------------------------------> */
+.page7{
+  height: 120vh;
 }
 .page7 .page7-upp{
   display: flex;
-  gap:7vw;
+  gap:10vw;
   align-items: center;
 }
 .page7-left, .page7-right{
@@ -758,5 +913,11 @@ gap: 9vw;
   width:20vw;
   height:15vh;
   object-fit: contain;
-} */
+}
+.page7-middle .middle-sec{
+ font-size: 10px;
+}
+.page7-down .middle-last{
+  text-align: justify;
+}
 }
