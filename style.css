@@ -653,7 +653,7 @@ width:75vw;
   width: 80vw;
 }
 .page4-img p {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /* <-------------------------------------------page5-----------------------------------> */
@@ -674,7 +674,7 @@ width:75vw;
   line-height:6vw;
 }
 .page5-sec button{
-  font-size:10px;
+  font-size:15px;
   width: 80vw;
 }
 .page5-sec p{
@@ -698,22 +698,24 @@ gap: 9vw;
   font-size: 28px;
 } 
 .page6-left p{
-  font-size:18px;
+  font-size:22px;
 }
 .page6-img img{
  scale:1.5;
 }
 .page6-sep{
   margin-top: 40vw;
+  gap:30px;
 }
 .page6-sep h2{
+  color: black;
   font-size: 18px;
   white-space: nowrap;
 }
 
 /* <---------------------------------------page7----------------------------------> */
 .page7{
-  height: 120vh;
+  height: 100vh;
 }
 .page7 .page7-upp{
   display: flex;
@@ -724,17 +726,23 @@ gap: 9vw;
   gap: 50px;
 }
 
-
+.page7-left .contact, .page7-right .contact{
+font-size: 18px;
+}
 .page7-middle svg{
   width:20vw;
   height:15vh;
   object-fit: contain;
 }
 .page7-middle .middle-sec{
- font-size: 10px;
+ font-size: 12px;
+ white-space: nowrap;
 }
 .page7-down .middle-last{
   text-align: justify;
+}
+.middle-last p{
+  font-size: 18px;
 }
 }
 
@@ -833,13 +841,12 @@ width:75vw;
   font-weight: lighter;
 }
 .page3-right .page3-line {
-  width: 20vw;
+  width: 15vw;
   height: 1.5px;
-  margin-top: -1vw;
-  margin-left: 56vw;
+  margin-top: -3vw;
+  margin-left:40vw;
 }
-/* <------------------------------------------page4----------------------------> */
-/* <-------------------------------------------page5-----------------------------------> */
+/*<-------------------------------------------page5-----------------------------------> */
 .page5{
   min-height: 66vh;
   margin-top:8vw;
@@ -847,7 +854,7 @@ width:75vw;
   gap:18vw;
 }
 .page5 .page5-first{
-  gap:9vw;
+  gap:13vw;
 }
 .page5 .page5-sec{
   gap:35vw;
