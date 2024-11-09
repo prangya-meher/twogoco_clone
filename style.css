@@ -149,6 +149,7 @@ body {
   font-size: 10px;
   font-weight: 400;
   font-family: helvetica;
+  color: rgb(59, 58, 58);
 }
 
 .sep .line {
@@ -378,9 +379,11 @@ align-items: center;
   margin-top: 13vw;
   padding:2vw;
   display: flex;
-  gap: 1vw;
+  /* gap: 2vw; */
+  justify-content: space-between;
 }
 .page6 .page6-left{
+  width: 20vw;
   display: flex;
   flex-direction: column;
   gap:2vw;
@@ -392,7 +395,8 @@ align-items: center;
 } 
 .page6-left p{
   font-family: helvetica;
-  font-size: 15px;
+  font-size: 13px;
+  white-space: wrap;
 }
 .page6-left h6{
   text-transform: uppercase;
@@ -406,7 +410,7 @@ align-items: center;
   margin-top: -1.5vw;
 }
 .page6-right{
-  margin-left:11vw;
+  /* margin-left:11vw; */
   display: flex;
   gap:0.5vw;
 }
@@ -446,7 +450,8 @@ align-items: center;
 
 /* <---------------------------------------page7----------------------------------> */
 .page7{
-  height: 100vh;
+  height:150vh;
+  /* background-color: red; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -537,18 +542,18 @@ gap:5px;
 .page1 {
   margin-top: 40vw;
   padding: 4vw 3vw;
-  width: 135%;
+  width: 100%;
   gap:7vw;
   min-height: 53vh;
 }
 .page1 h1 {
   letter-spacing:-8px;
-  font-size:20vw;
-  line-height: 17vw;
+  font-size:17vw;
+  line-height: 15vw;
 }
 .page1 .video-container {
-  width: 130%;
-  height: 30vh;
+  width: 100%;
+  height: 26vh;
   position: relative;
   cursor: pointer;
 }
@@ -560,17 +565,18 @@ gap:5px;
 
 /* <------------------------------sep--------------------------> */
 .sep {
-  width: 135%;
+  width: 100%;
+  margin-top: -11vw;
 }
 
 .sep .sep-text {
-  font-size: 14px;
+  font-size:8px;
 }
 
 /* <------------------------page2-----------------------> */
 .page2 {
   min-height: 100vh;
-  width: 135%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -596,7 +602,7 @@ width:75vw;
 }
 /* <----------------------page3----------------------> */
 .page3 {
-  width: 135%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -612,7 +618,7 @@ width:75vw;
   gap: 5vw;
 }
 .page3-right p {
-  font-size:19px;
+  font-size:15px;
 }
 
 .page3-right h6 {
@@ -629,7 +635,7 @@ width:75vw;
 
 /* <------------------------------------------page4----------------------------> */
 .page4 {
-  width: 135%;
+  width: 100%;
   margin: 8vw 0;
   padding: 0 6vw;
   display: flex;
@@ -644,21 +650,21 @@ width:75vw;
   align-items: center;
 }
 .page4 .page4-img {
-  width: 70vw;
+  width: 80vw;
 }
 .page4-img p {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /* <-------------------------------------------page5-----------------------------------> */
 .page5{
-  min-height: 50vh;
+  min-height: 66vh;
   margin-top:8vw;
-  width: 135%;
+  width: 100%;
   gap:20vw;
 }
 .page5 .page5-first{
-  gap:18vw;
+  gap:9vw;
 }
 .page5 .page5-sec{
   gap:60vw;
@@ -668,229 +674,89 @@ width:75vw;
   line-height:6vw;
 }
 .page5-sec button{
-  font-size:18px;
+  font-size:10px;
   width: 80vw;
 }
 .page5-sec p{
-  font-size: 22px;
+  font-size: 15px;
   margin-top: -50vw;
 }
 
 /* <------------------------------------page6---------------------------> */
 .page6{
-  height: 60vh;
-  width: 135%;
-  padding:2vw;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
+  height: 70vh;
+flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+gap: 9vw;
 }
 .page6 .page6-left{
-  display: flex;
-  flex-direction: column;
-  gap:2vw;
+  width: 100%;
+  gap: 6vw;
 }
 .page6-left h4{
-  font-family: futura;
-  font-size: 20px;
-  text-transform: uppercase;
+  font-size: 28px;
 } 
-.page6-left p{
-  font-family: helvetica;
-  font-size: 15px;
-}
-.page6-left h6{
-  text-transform: uppercase;
-  font-family: helvetica;
-  font-size:10px;
-}
-.page6-left .page6-line{
-  width: 110px;
-  height: 1px;
-  background-color: black;
-  margin-top: -1.5vw;
-}
-.page6-right{
-  margin-left:11vw;
-  display: flex;
-  gap:0.5vw;
-}
-.page6-right .page6-img{
-  background-color: black;
-  height:60%;
-  overflow: hidden;
-}
 .page6-img img{
-  height: 100%;
-  width: 100%;
+ scale:1.5;
+}
+.page6-sep{
+  margin-top: 40vw;
+}
+.page6-sep h2{
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+/* <---------------------------------------page7----------------------------------> */
+.page7{
+  height: 100vh;
+}
+.page7 .page7-upp{
+  display: flex;
+  gap:2vw;
+  align-items: center;
+}
+.page7-left, .page7-right{
+  gap: 50px;
+}
+
+
+.page7-middle svg{
+  width:20vw;
+  height:15vh;
   object-fit: contain;
 }
+.page7-middle .middle-sec{
+ font-size: 10px;
+}
+.page7-down .middle-last{
+  text-align: justify;
+}
 
-.page6-sep {
-  margin-top: 3vw;
+/* .page7{
+  height:100vh;
+  width: 100%;
+  padding: 1vw 2vw;
+  justify-content:center;
+  gap:1vw;
+  align-items: center;
+  font-family: helvetica;
+  font-size: 12px;
+}
+.page7 .page7-upp{
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 5px;
-  height: min-content;
-  padding: 0 2vw;
+  gap:7vw;
+  align-items: center;
 }
-
-.page6-sep h2 {
-  text-transform: uppercase;
-  font-size: 33px;
-  font-weight: 400;
-  font-family:futura;
-}
-
-.page6-sep .line {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(110, 107, 107, 0.475);
-}
+.page7-left, .page7-right{
+  gap: 50px;
 }
 
 
-
-
-
-
-
-
-
-
-  /* <-------------------header--------------------->
-  .header {
-    margin-top: -17vw;
-  }
-  .header .logo {
-    line-height: 17px;
-    font-size: 19px;
-  }
-  .header .link ul {
-    display: none;
-  }
-
-  <----------------------------------page1----------------------------->
- .page1 .page1-text{
-  margin-top: 10vw;
- }
-   .page1 h1 {
-    letter-spacing: -15px;
-    font-size: 16.4vw;
-    line-height: 13vw;
-    font-weight: 900;
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-family: futura;
-  }
-  .page1 h1::selection {
-    background-color: black;
-    color: white;
-  }
-  .page1 .video-container {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    cursor: pointer;
-  }
-  .video-container .play {
-    position: fixed;
-    padding: 2.5vw 2vw;
-    font-size: 15px;
-    font-family: futura;
-    font-weight: 500;
-    background-color: black;
-    border-radius: 50px;
-    color: white;
-    opacity: 0;
-    scale: 0;
-    transform: translate(-50%, -50%);
-  }
-  .page1 .video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  } 
-  .page1 {
-    min-height: 43vh;
-    margin-top: 10vw;
-  }
-  .page1 h1 {
-    letter-spacing: -1.2px;
-    font-size: 15.1vw;
-    line-height: 13vw;
-  }
-  .page1 .video-container {
-    height: 27vh;
-  }
-  .video-container .play {
-    padding: 7vw 6vw;
-    font-size: 15px;
-  }
-  <-------------------------sep----------------->
-  .sep {
-    padding: 0 2vw;
-  }
-  <------------------------page2----------------------->
-  .page2 {
-    margin-top: 1vw;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .page2 .elem {
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
-  }
-  .page2 .elem img {
-    height: 100vh;
-    width: 100%;
-    object-fit: contain;
-  }
-
-  <----------------------page3---------------------->
-  .page3 {
-    padding: 0 6vw;
-    min-height: 100vh;
-    width: 100%;
-    margin-top: -43vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 6vw;
-  }
-  .page3 h1 {
-    font-size: 5.5vw;
-    line-height: 5vw;
-  }
-  .page3-right {
-    text-align: center;
-    gap: 6vw;
-    margin-right: 0;
-  }
-  .page3-right h6 {
-    font-size: 6px;
-  }
-  .page3-right .page3-line {
-    margin-left: 40vw;
-    margin-top: -5vw;
-    background-color: rgb(100, 97, 97);
-  }
-
-  <---------------------------page4---------------------->
-  .page4 {
-    margin-top: -40vw;
-  }
-  .page4-img p {
-    font-size:8px;
-  }  */
-
+.page7-middle svg{
+  width:20vw;
+  height:15vh;
+  object-fit: contain;
+} */
+}
