@@ -140,6 +140,38 @@ function cursorAnimation() {
     })
 }
 
+const hamAnimation=()=>{
+    var openMenu=document.querySelector(".open-menu");
+    var closeMenu=document.querySelector(".close-menu");
+
+    var tl1= gsap.timeline();
+    tl1.to(".sidebar",{
+        top:0,
+        duration:1
+    })
+    tl1.from(closeMenu,{
+        opacity:0,
+        y:-50,
+        duration:1
+    })
+    tl1.from(".sidebar li",{
+        x:100,
+        opacity:0,
+        stagger:0.5,
+        duration:1
+    })
+
+    tl1.pause();
+    openMenu.addEventListener("click",()=>{
+        tl1.play();
+    })
+    closeMenu.addEventListener("click",()=>{
+        tl1.reverse();
+    })
+}
+
+hamAnimation();
+
 locomotiveJsAnimation();
 cursorAnimation();
 headerAnimation();

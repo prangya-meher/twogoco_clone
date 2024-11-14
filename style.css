@@ -51,13 +51,39 @@ body {
   margin-top: -50px;
   gap: 4vw;
 }
-.header .link ul {
+.header .sidebar{
+  box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4vw;
+  height: 40vh;
+  width: 100%;
+  position:fixed;
+  top:-40vh;
+  right: 0;
+  background-color:rgba(255, 255, 255, 0.419);
+  backdrop-filter: blur(10px);
 }
-.header .icons {
+.header .sidebar li{
+  font-size: 13px;
+  list-style: none;
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 15px;
+}
+.header .sidebar .close-menu{
+  position:fixed;
+  top: 5%;
+  left: 5%;
+  background-color: rgb(121, 113, 113);
+  padding: 12px 15px;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header .open-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +91,25 @@ body {
   background-color: white;
   border-radius: 50px;
   padding: 10px;
+  display: none;
+  cursor: pointer;
 }
+.header .link-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+/* .header .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px;
+  display: none;
+} */
 .header .link ul li {
   font-size: 11px;
   list-style: none;
@@ -531,12 +575,13 @@ gap:5px;
     width:20vw;
     display: block;
   }
-  .header .icons {
+  .header .open-menu {
+    display: block;
     margin-top: 4vw;
     gap: 15vw;
     padding:20px;
   }
-  .header .link ul {
+  .header .link-ul {
     display:none;
   }
   /* <----------------------------------page1-----------------------------> */
@@ -758,10 +803,11 @@ font-size: 15px;
     width:20vw;
     display: block;
   }
-  .header .icons {
+  .header .open-menu {
     margin-top: 4vw;
     gap: 15vw;
     padding:20px;
+    display: block;
   }
   .header .link ul {
     display:none;
