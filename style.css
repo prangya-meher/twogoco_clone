@@ -845,7 +845,7 @@ font-size: 15px;
     display:none;
   }
   .header .sidebar li{
-    font-size:30px;
+    font-size:60px;
     list-style: none;
     font-family: helvetica;
     text-transform: uppercase;
@@ -859,7 +859,7 @@ font-size: 15px;
     right: 15%;
     padding: 12px 15px;
     border-radius: 50px;
-    font-size: 50px;
+    font-size: 90px;
     cursor: pointer;
   }
    /* <----------------------------------page1-----------------------------> */
