@@ -155,7 +155,7 @@ const hamAnimation=()=>{
         duration:1
     })
     tl1.from(".sidebar li",{
-        x:100,
+        y:50,
         opacity:0,
         stagger:0.5,
         duration:1
