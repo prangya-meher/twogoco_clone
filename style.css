@@ -598,6 +598,24 @@ gap:5px;
   .header .link-ul {
     display:none;
   }
+  .header .sidebar li{
+    font-size:20px;
+    list-style: none;
+    font-family: helvetica;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0 25px;
+    color: white;
+  }
+  .header .sidebar .close-menu{
+    position:fixed;
+    top:3%;
+    right: 15%;
+    padding: 12px 15px;
+    border-radius: 50px;
+    font-size: 30px;
+    cursor: pointer;
+  }
   /* <----------------------------------page1-----------------------------> */
 .page1 {
   margin-top: 40vw;
@@ -825,6 +843,24 @@ font-size: 15px;
   }
   .header .link ul {
     display:none;
+  }
+  .header .sidebar li{
+    font-size:20px;
+    list-style: none;
+    font-family: helvetica;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0 25px;
+    color: white;
+  }
+  .header .sidebar .close-menu{
+    position:fixed;
+    top:3%;
+    right: 15%;
+    padding: 12px 15px;
+    border-radius: 50px;
+    font-size: 30px;
+    cursor: pointer;
   }
    /* <----------------------------------page1-----------------------------> */
 .page1 {
