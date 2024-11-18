@@ -91,6 +91,8 @@ tl.from(headerH1,{
     opacity:0,
     duration:0.4
 })
+
+  
 }
 
 const videoAnimation = () =>{
@@ -151,14 +153,14 @@ const hamAnimation=()=>{
     })
     tl1.from(closeMenu,{
         opacity:0,
-        y:-50,
-        duration:1
+        y:-30,
+        duration:0.8
     })
     tl1.from(".sidebar li",{
-        y:50,
+        y:30,
         opacity:0,
         stagger:0.5,
-        duration:1
+        duration:0.8
     })
 
     tl1.pause();
